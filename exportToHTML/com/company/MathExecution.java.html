@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>MathExecution.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MathExecution.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.company;
+
+<span class="s0">public class </span>MathExecution {
+    <span class="s0">private double </span>leftVal;
+    <span class="s0">private double </span>rightVal;
+    <span class="s0">private char </span>codes;
+    <span class="s0">private double </span>results;
+
+    <span class="s0">public double </span>getLeftVal() {
+        <span class="s0">return </span>leftVal;
+    }
+
+    <span class="s0">public void </span>setLeftVal(<span class="s0">double </span>leftVal) {
+        <span class="s0">this</span>.leftVal = leftVal;
+    }
+
+    <span class="s0">public double </span>getRightVal() {
+        <span class="s0">return </span>rightVal;
+    }
+
+    <span class="s0">public void </span>setRightVal(<span class="s0">double </span>rightVal) {
+        <span class="s0">this</span>.rightVal = rightVal;
+    }
+
+    <span class="s0">public char </span>getCodes() {
+        <span class="s0">return </span>codes;
+    }
+
+    <span class="s0">public void </span>setCodes(<span class="s0">char </span>codes) {
+        <span class="s0">this</span>.codes = codes;
+    }
+
+    <span class="s0">public double </span>getResults() {
+        <span class="s0">return </span>results;
+    }
+
+    <span class="s0">public void </span>setResults(<span class="s0">double </span>results) {
+        <span class="s0">this</span>.results = results;
+    } <span class="s0">public void </span>execute(){
+        <span class="s0">switch </span>(codes) {
+            <span class="s0">case </span><span class="s2">'a'</span>:
+                results= leftVal + rightVal;
+            <span class="s0">break</span>;
+            <span class="s0">case </span><span class="s2">'s'</span>:
+                results= leftVal - rightVal;
+                <span class="s0">break</span>;
+            <span class="s0">case </span><span class="s2">'d'</span>:
+                results= leftVal/rightVal;
+                <span class="s0">break</span>;
+                <span class="s0">case </span><span class="s2">'n'</span>:
+                    results= leftVal * rightVal;
+                            <span class="s0">break</span>;
+            <span class="s0">default</span>:
+                System.out.println(<span class="s2">&quot;Invalid code. Try a valid one....&quot;</span>);
+                <span class="s0">break</span>;
+
+
+
+
+
+
+        }
+    }
+}
+
+
+</pre>
+</body>
+</html>
